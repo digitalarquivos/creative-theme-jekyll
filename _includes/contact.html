@@ -25,45 +25,35 @@
             </a>
         </div>
             
-            <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <title>Formulário HTML</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
-<body>
-    <form class="formulario" method="post"> 
-        <p> Envie uma mensagem preenchendo o formulário abaixo</p>
-        
-        <div class="field">
-            <label for="nome">Seu Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
-        </div>
-        
-        <div class="field">
-            <label for="telefone">Seu Telefone:</label>
-            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
-        </div>
+       <html>
+<head><meta charset="UTF-8"></head>
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+ <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+ <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+ <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+ <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
  
-        <div class="field">
-            <label for="email">Seu E-Mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
-        </div>        
-        <div class="field radiobox">
-            <span>Deseja receber nossas novidades?</span>
-            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
-            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
-        </div>
-        <div class="field">
-            <label for="mensagem">Sua mensagem:</label>
-            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
-        </div>
+ <p> 
+ Nome:<br /> 
+ <input type="text" size="30" name="nome"> 
+ </p>   
  
-        <input type="submit" name="acao" value="Enviar">
-    </form>
-</body>
-</html>
+ <p>
+ E-mail:<br /> 
+ <input type="text" size="30" name="replyto"> 
+ </p>   
+ 
+ <p> 
+ Comentários:<br /> 
+ <input type="text" size="35" name="Comentarios"> 
+ </p>   
+ 
+ <p> 
+ <input type="submit" name="BTEnvia" value="Enviar"> 
+ <input type="reset" name="BTApaga" value="Apagar"> </p> 
+ </form>
+ 
+</html> 
 
             
     </div>
