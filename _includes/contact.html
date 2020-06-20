@@ -26,35 +26,22 @@
         </div>
         
 
-            <html>
-<head><meta charset="UTF-8"></head>
-<form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
- <input type="hidden" name="recipient" value="comercial@digitalarquivos.com.br"> <!-- Pode ser qualquer endereço de email -->
- <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
- <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
- <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
- 
- <p> 
- Nome:<br /> 
- <input type="text" size="30" name="nome"> 
- </p>   
- 
- <p>
- E-mail:<br /> 
- <input type="text" size="30" name="replyto"> 
- </p>   
- 
- <p> 
- Comentários:<br /> 
- <input type="text" size="35" name="Comentarios"> 
- </p>   
- 
- <p> 
- <input type="submit" name="BTEnvia" value="Enviar"> 
- <input type="reset" name="BTApaga" value="Apagar"> </p> 
- </form>
- 
-</html> 
+            
+            <div id="contact">
+  <h1 class="pageTitle">Contact Me</h1>
+  <div class="contactContent">
+    <p class="intro">This is an example Contact page. If you want to make changes then do so in the <code>contact.html</code> file.</p>
+    <p>The form is provided by <a href="http://formspree.io/">Formspree.</a> Follow the directions on their site to set up the form for use.</p>
+    <p>If you have questions about the theme feel free to <a href="mailto:comercial@digitalarquivos.com.br">email me</a> or create an issue on <a href="https://github.com/brianmaierjr/long-haul">GitHub</a>. Enjoy!</p>
+  </div>
+<form method="POST" action="https://formspree.io/comercial@digitalarquivos.com.br">
+  <input type="email" name="email" placeholder="Seu email">
+  <textarea name="message" placeholder="Mensagem"></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+            
+            
             
 
             
